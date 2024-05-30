@@ -1589,6 +1589,8 @@ int main(int argc, char *argv[]) {
     printf("| genT                  | %-50d |\n", genT);
     printf("+-----------------------+----------------------------------------------------+\n");
 
+    // set up KMM manager
+    auto kmm_manager = kmm::build_runtime();
     // set up the device
     int deviceIdx = 0;
     cudaCheck(cudaSetDevice(deviceIdx));
