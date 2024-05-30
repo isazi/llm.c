@@ -16,7 +16,7 @@ CUDA_OUTPUT_FILE = -o $@
 NVCC_FLAGS = -O3 -t=0 --use_fast_math -std=c++17
 NVCC_LDFLAGS = -lcublas -lcublasLt -lkmm
 NVCC_INCLUDES = -I${HOME}/.local/include
-NVCC_LDLIBS =
+NVCC_LDLIBS = -L${HOME}/.local/lib
 NCLL_INCUDES =
 NVCC_CUDNN =
 # By default we don't build with cudnn because it blows up compile time from a few seconds to ~minute
