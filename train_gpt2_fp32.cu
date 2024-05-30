@@ -20,6 +20,8 @@ the layernorms are connected to the residuals so we += in layernorm backward.
 #include <string.h>
 #include <unistd.h>
 
+#include <kmm/kmm.hpp>
+
 // GPU / CUDA related
 #include <cublas_v2.h>
 #include <cuda_runtime.h>
